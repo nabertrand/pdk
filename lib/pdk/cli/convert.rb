@@ -9,6 +9,7 @@ module PDK::CLI
     PDK::CLI.template_url_option(self)
     PDK::CLI.skip_interview_option(self)
     PDK::CLI.full_interview_option(self)
+    flag nil, :init, _('Also process templates only added during module creation.')
     flag nil, :noop, _('Do not convert the module, just output what would be done.')
     flag nil, :force, _('Convert the module automatically, with no prompts.')
 
