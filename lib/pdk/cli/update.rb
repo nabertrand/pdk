@@ -7,6 +7,7 @@ module PDK::CLI
     usage _('update [options]')
     summary _('Update a module that has been created by or converted for use by PDK.')
 
+    flag nil, :init, _('Also process templates only added during module creation.')
     flag nil, :noop, _('Do not update the module, just output what would be done.')
     flag nil, :force, _('Update the module automatically, with no prompts.')
 
